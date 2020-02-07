@@ -1,3 +1,8 @@
+<script type="text/javascript">
+  function handleClick () {
+    console.log('you just clicked me!!');
+  }
+</script>
 <div class="address-form">
   <h1>{{title}}</h1>
   <form action="/search" method="post">
@@ -25,7 +30,7 @@
       <input id="zip-field" name="zip" size="10" type="text">
     </div>
     <div class="button">
-      <button type="submit">Search</button>
+      <button type="submit" onclick="handleClick()">Search</button>
     </div>
   </form>
 </div>

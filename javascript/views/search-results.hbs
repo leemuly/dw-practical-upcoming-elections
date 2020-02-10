@@ -1,6 +1,13 @@
 <div class="search-results">
   <h1>{{title}}</h1>
   {{#each nearbyElections}}
-    <div value="{{this.description}}"> {{this.description}} </div>
+    <div class="election">
+      <h2 value="description" class="election-description"> {{this.description}} </h2>
+      <h3 value="date"> {{this.date}} </h3>
+      <div value="polling-place-url-shortened">
+        Look up your voter information for this election at:
+        <a href="{{this.polling-place-url-shortened}}"> {{this.polling-place-url-shortened}} </a>
+      </div>
+    </div>
   {{/each}}
 </div>
